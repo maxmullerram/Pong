@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard - Pong Arena</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header>
+    <a href="/">Pong Arena</a>
+    <nav>
+      <a href="/game">Juego</a>
+      <a href="/profile">Perfil</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h1>Leaderboard</h1>
+      <table class="table" id="leaderboardTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Jugador</th>
+            <th>Best Score</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="empty" class="helper" style="margin-top:1rem;"></p>
+    </div>
+  </main>
+  <script src="/js/leaderboard.js"></script>
+</body>
+</html>
