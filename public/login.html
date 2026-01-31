@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Pong Arena</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header>
+    <a href="/">Pong Arena</a>
+    <nav>
+      <a href="/leaderboard">Leaderboard</a>
+      <a href="/profile">Perfil</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h1>Login</h1>
+      <form id="loginForm">
+        <div>
+          <label for="username">Username</label>
+          <input id="username" name="username" required minlength="3" maxlength="20" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required minlength="8" />
+        </div>
+        <button class="btn" type="submit">Entrar</button>
+      </form>
+      <div id="message" style="margin-top:1rem;"></div>
+      <p class="helper" style="margin-top:1rem;">¿No tienes cuenta? <a href="/register">Regístrate</a>.</p>
+    </div>
+  </main>
+  <script src="/js/login.js"></script>
+</body>
+</html>
